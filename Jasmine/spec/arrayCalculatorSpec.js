@@ -11,6 +11,11 @@ describe('ArrayCalculator', function(){
   })
 
   it('an empty array returns 0', function(){
-    expect(arrayCalculator.sumLargestNums([])).toEqual([0]);
+    expect(arrayCalculator.sumLargestNums([])).toEqual(0);
   });
+
+  it('array with 1 number returns that number', function(){
+    expect(arrayCalculator.sumLargestNums([12])).toEqual(12);
+  });
+
 });
