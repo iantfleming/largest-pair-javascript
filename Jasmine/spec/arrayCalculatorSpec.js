@@ -18,4 +18,8 @@ describe('ArrayCalculator', function(){
     expect(arrayCalculator.sumLargestNums([12])).toEqual(12);
   });
 
+  it('array with 2 numbers returns the sum of those 2 numbers', function(){
+    expect(arrayCalculator.sumLargestNums([12, 8])).toEqual(20);
+  });
+
 });
