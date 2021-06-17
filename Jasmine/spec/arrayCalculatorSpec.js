@@ -22,4 +22,8 @@ describe('ArrayCalculator', function(){
     expect(arrayCalculator.sumLargestNums([12, 8])).toEqual(20);
   });
 
+  it('returns the sum of the highest 2 numbers in an array', function(){
+    expect(arrayCalculator.sumLargestNums([12, 8, 6])).toEqual(20);
+  });
+
 });
