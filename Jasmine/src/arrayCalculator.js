@@ -8,7 +8,9 @@ class ArrayCalculator {
     } else if(arr.length <= 2) {
       return this.sumTwoNums(arr)
     } else {
-      return this.sumMoreThanTwo(arr)
+      this.ascendingOrder(arr)
+      arr.shift();
+      return this.sumTwoNums(arr)
     }
   }
 
@@ -17,7 +19,7 @@ class ArrayCalculator {
     return arr.reduce((num1, num2) => num1 + num2)
   }
 
-  sumMoreThanTwo(arr) {
+  ascendingOrder(arr) {
     return arr.sort(function(a, b) {return a - b})
   }
 }
